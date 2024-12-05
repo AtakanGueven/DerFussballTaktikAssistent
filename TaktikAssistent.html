@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fußball Taktik-Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fußball Taktik-Analyzer</h1>
+        <label for="formation">Wähle die Formation des Gegners:</label>
+        <select id="formation">
+            <option value="4-3-3">4-3-3</option>
+            <option value="3-4-3">3-4-3</option>
+            <option value="4-2-4">4-2-4</option>
+            <option value="4-4-2">4-4-2</option>
+            <option value="5-3-2">5-3-2</option>
+            <option value="4-1-4-1">4-1-4-1</option>
+            <option value="3-5-2">3-5-2</option>
+            <option value="4-2-3-1">4-2-3-1</option>
+        </select>
+
+        <label for="style">Wähle den Spielstil des Gegners:</label>
+        <select id="style">
+            <option value="tiki taka">Tiki Taka</option>
+            <option value="positional play">Positional Play</option>
+            <option value="vertikal tiki taka">Vertikal Tiki Taka</option>
+            <option value="gegenpressing">Gegenpressing</option>
+            <option value="catenaccio">Catenaccio</option>
+            <option value="park the bus">Park the Bus</option>
+            <option value="schnelles konterspiel">Schnelles Konterspiel</option>
+            <option value="gegenpressing mit ballbesitz">Gegenpressing mit Ballbesitz</option>
+        </select>
+
+        <label for="weather">Wähle die Wetterbedingungen:</label>
+        <select id="weather">
+            <option value="Sonnig">Sonnig</option>
+            <option value="Regen">Regen</option>
+            <option value="Schnee">Schnee</option>
+            <option value="Wind">Wind</option>
+        </select>
+
+        <label for="surface">Wähle den Untergrund:</label>
+        <select id="surface">
+            <option value="Rasen">Rasen</option>
+            <option value="Kunstrasen">Kunstrasen</option>
+            <option value="Sand">Sand</option>
+        </select>
+
+        <button id="analyze">Analyse</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
